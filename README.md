@@ -236,7 +236,7 @@ Plant_Disease/
     ├── gradcam.py
     └── segmentation.py
 
-# ⚙️ InstallationL:
+⚙️ InstallationL:
 
 Clone Repository
 git clone <your-github-repo-link>
@@ -258,7 +258,7 @@ Application runs at:
 http://127.0.0.1:7860
 
 
-#📦 Required Libraries
+📦 Required Libraries
 tensorflow
 opencv-python
 gradio
@@ -268,7 +268,7 @@ matplotlib
 rembg
 onnxruntime
 
-#🧠 Key Learnings
+🧠 Key Learnings
 
 Through this project I learned:
 
@@ -283,7 +283,7 @@ Real-World Dataset Challenges
 Domain Shift Problems
 Model Generalization.
 
-#⚠️ Real-World Challenges
+⚠️ Real-World Challenges
 
 The model performs strongly on PlantVillage-style images.
 
@@ -294,7 +294,7 @@ Complex backgrounds
 Domain shift
 Low-quality images
 
-#Future improvements:
+Future improvements:
 
 Real farm dataset training
 Lesion segmentation
@@ -311,5 +311,5 @@ PDF Report Generation
 Advanced Explainability
 Farmer Advisory System
 
-#👨‍💻 Author:
+👨‍💻 Author:
 Mohd Faizanullah
