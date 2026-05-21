@@ -333,7 +333,7 @@ pip install -r requirements.txt
 Due to GitHub file size limitations, the trained model is hosted externally.
 
 Download Model Here:
-PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE
+[PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/file/d/1gPvOvKM3Ri8UEPHdqoFIQmN0MqZbX_cf/view?usp=sharing)
 
 After downloading, place the model inside:
 
