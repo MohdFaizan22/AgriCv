@@ -236,7 +236,8 @@ Plant_Disease/
     ├── gradcam.py
     └── segmentation.py
 
-⚙️ InstallationL:
+---
+# ⚙️ InstallationL:
 
 Clone Repository
 git clone <your-github-repo-link>
@@ -257,7 +258,7 @@ Application runs at:
 
 http://127.0.0.1:7860
 
-
+---
 📦 Required Libraries
 tensorflow
 opencv-python
