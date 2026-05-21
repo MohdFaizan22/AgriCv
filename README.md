@@ -1,222 +1,264 @@
 # 🌿 AgriVision AI — Plant Disease Detection using Deep Learning
 
-AgriVision AI is an end-to-end Computer Vision + Deep Learning project that detects plant diseases from leaf images using Transfer Learning with EfficientNetB0.
+AgriVision AI is an end-to-end Deep Learning + Computer Vision project that detects plant diseases from leaf images using Transfer Learning with EfficientNetB0.
 
 The system predicts 38 different plant disease categories with high accuracy and provides:
-- Disease prediction
-- Confidence scores
-- Grad-CAM visualization
-- Disease information
-- Prevention methods
-- Cure suggestions
 
-Built using TensorFlow, OpenCV, Gradio, and EfficientNet.
+* Disease Prediction
+* Confidence Scores
+* Grad-CAM Visualization
+* Disease Description
+* Symptoms
+* Prevention Methods
+* Cure Suggestions
+
+Built using TensorFlow, OpenCV, EfficientNet, and Gradio.
 
 ---
 
 # 🚀 Features
 
-✅ Plant Disease Detection from Leaf Images  
-✅ 38 Disease Categories  
-✅ Transfer Learning with EfficientNetB0  
-✅ Grad-CAM Explainability Visualization  
-✅ Leaf Segmentation for Better Prediction  
-✅ Top-3 Predictions with Confidence Bars  
-✅ Disease Description + Symptoms + Cure Suggestions  
-✅ Interactive Gradio Web App  
-✅ Real-Time AI Prediction System  
+✅ Plant Disease Detection using AI
+✅ 38 Disease Categories
+✅ Transfer Learning with EfficientNetB0
+✅ Fine-Tuned Deep Learning Model
+✅ Leaf Segmentation for Better Predictions
+✅ Grad-CAM Explainability Visualization
+✅ Top-3 Predictions with Confidence Bars
+✅ Disease Information & Cure Suggestions
+✅ Interactive Gradio Web Application
+✅ Real-Time Image Prediction System
 
 ---
 
 # 🧠 Problem Statement
 
-Farmers often struggle to identify crop diseases early, leading to:
-- reduced crop yield
-- financial loss
-- excessive pesticide usage
+Plant diseases significantly reduce agricultural productivity and crop quality.
 
-AgriVision AI helps detect diseases instantly using smartphone leaf images.
+Traditional disease identification:
+
+* requires expert knowledge
+* is time-consuming
+* may delay treatment
+
+AgriVision AI helps farmers and researchers instantly identify plant diseases using leaf images.
 
 ---
 
 # 🌱 Why This Project Matters
 
 This project combines:
-- Computer Vision
-- Agriculture
-- Deep Learning
-- Explainable AI
 
-Plant disease detection is widely used in modern AgriTech platforms like:
-- Plantix
-- CropIn
-- Nuru
+* Artificial Intelligence
+* Agriculture
+* Deep Learning
+* Computer Vision
+* Explainable AI
 
-This makes the project highly relevant for:
-- AI Engineer roles
-- ML Engineer roles
-- Computer Vision roles
-- Agricultural AI startups
+Applications:
+
+* Smart Farming
+* Precision Agriculture
+* AI-Based Crop Monitoring
+* Agricultural Decision Support Systems
 
 ---
 
-# 🏗️ Project Architecture
+# 🏗️ Project Workflow
 
+```text
 Leaf Image
-↓
+   ↓
 Leaf Segmentation
-↓
+   ↓
 Image Preprocessing
-↓
+   ↓
 EfficientNetB0 Model
-↓
+   ↓
 Disease Prediction
-↓
+   ↓
 Grad-CAM Visualization
-↓
-Disease Information + Cure Suggestion
+   ↓
+Disease Information & Cure Suggestions
+```
 
 ---
 
 # 🛠️ Tech Stack
 
-## Languages
-- Python
+## Programming Language
 
-## Deep Learning
-- TensorFlow
-- Keras
+* Python
+
+## Deep Learning Frameworks
+
+* TensorFlow
+* Keras
 
 ## Computer Vision
-- OpenCV
-- Grad-CAM
-- Transfer Learning
+
+* OpenCV
+* Grad-CAM
 
 ## Deployment
-- Gradio
+
+* Gradio
 
 ## Image Processing
-- NumPy
-- PIL
-- rembg
+
+* NumPy
+* Pillow
+* rembg
 
 ---
 
 # 📂 Dataset
 
 ## PlantVillage Dataset
-- 54,000+ images
-- 38 classes
-- Multiple crops and diseases
+
+* 54,000+ Images
+* 38 Classes
+* Multiple Crops & Diseases
 
 Dataset Source:
-https://www.kaggle.com/datasets/emmarex/plantdisease
+[https://www.kaggle.com/datasets/emmarex/plantdisease](https://www.kaggle.com/datasets/emmarex/plantdisease)
+
+---
+
+# 📊 Disease Categories
+
+The model supports 38 classes including:
+
+* Apple Diseases
+* Corn Diseases
+* Tomato Diseases
+* Potato Diseases
+* Grape Diseases
+* Strawberry Diseases
+* Peach Diseases
+* Pepper Diseases
+* Soybean Diseases
+* Healthy Leaf Detection
 
 ---
 
 # 🧪 Model Development Phases
 
-# Phase 1 — Dataset Preparation
-- Loaded PlantVillage dataset
-- Applied train-validation split
-- Image augmentation using ImageDataGenerator
+## Phase 1 — Dataset Preparation
+
+Performed:
+
+* Data Loading
+* Train/Validation Split
+* Image Augmentation
 
 Techniques:
-- Rotation
-- Zoom
-- Horizontal Flip
-- Rescaling
+
+* Rotation
+* Zoom
+* Horizontal Flip
+* Rescaling
 
 ---
 
-# Phase 2 — Baseline CNN Model
+## Phase 2 — Baseline CNN Model
 
-Built custom CNN:
-- Conv2D
-- MaxPooling
-- BatchNormalization
-- Dropout
-- Dense Layers
+Built a custom CNN using:
 
-Achieved strong baseline performance.
+* Conv2D
+* MaxPooling
+* BatchNormalization
+* Dropout
+* Dense Layers
+
+Purpose:
+
+* Establish baseline performance
+* Understand CNN workflow
 
 ---
 
-# Phase 3 — Transfer Learning
+## Phase 3 — Transfer Learning
 
 Used:
-## EfficientNetB0
+
+### EfficientNetB0
 
 Advantages:
-- Better feature extraction
-- Faster convergence
-- Higher accuracy
-- Fewer parameters
 
-Frozen pretrained layers initially.
+* Better Feature Extraction
+* Higher Accuracy
+* Fewer Parameters
+* Faster Training
+
+Initially froze pretrained layers.
 
 ---
 
-# Phase 4 — Fine Tuning
+## Phase 4 — Fine Tuning
 
-Unfroze last layers of EfficientNetB0.
+Unfroze upper EfficientNet layers and retrained using:
 
-Fine-tuned with:
-- Low Learning Rate (1e-5)
-- Additional epochs
+* Low Learning Rate
+* Additional Epochs
 
 Result:
-✅ Significant accuracy improvement
+✅ Significant performance improvement
 
 ---
 
 # 📈 Final Results
 
-| Metric | Value |
-|---|---|
-| Validation Accuracy | 96% |
-| Classes | 38 |
-| Dataset Size | 54K+ Images |
-| Model | EfficientNetB0 |
-| Framework | TensorFlow/Keras |
+| Metric              | Value            |
+| ------------------- | ---------------- |
+| Validation Accuracy | 96%              |
+| Model               | EfficientNetB0   |
+| Classes             | 38               |
+| Dataset Size        | 54K+ Images      |
+| Framework           | TensorFlow/Keras |
 
 ---
 
 # 🔍 Explainable AI with Grad-CAM
 
-Grad-CAM highlights image regions influencing predictions.
+Grad-CAM highlights regions of the image influencing model predictions.
 
 Benefits:
-- Improves model transparency
-- Visualizes disease focus regions
-- Helps explain AI decisions
+
+* Improves transparency
+* Helps visualize model focus
+* Makes predictions explainable
 
 ---
 
 # ✂️ Leaf Segmentation
 
-Added background removal using:
-## rembg
+Implemented background removal using:
+
+### rembg
 
 Benefits:
-- Better internet image predictions
-- Reduced background noise
-- Improved real-world performance
+
+* Reduces background noise
+* Improves internet image prediction
+* Better real-world generalization
 
 ---
 
 # 🌐 Web Application
 
 Built using:
-## Gradio
+
+### Gradio
 
 Features:
-- Upload leaf image
-- View predictions
-- Confidence bars
-- Grad-CAM heatmap
-- Disease information
-- Cure suggestions
+
+* Upload Leaf Image
+* View Top Predictions
+* Confidence Bars
+* Grad-CAM Heatmap
+* Disease Information
+* Cure Suggestions
 
 ---
 
@@ -226,40 +268,102 @@ Features:
 Plant_Disease/
 │
 ├── app.py
-├── disease_info.py
-├── requirements.txt
 ├── README.md
-├── final_agrivision_model.keras
+├── requirements.txt
+├── .gitignore
 │
 ├── utils/
-    ├── predict.py
-    ├── gradcam.py
-    └── segmentation.py
+│   ├── predict.py
+│   ├── gradcam.py
+│   ├── segmentation.py
+│   └── disease_info.py
+│
+├── sample_images/
+│
+└── notebooks/
+```
 
 ---
-# ⚙️ InstallationL:
 
-Clone Repository
-git clone <your-github-repo-link>
+# ⚙️ Installation
+
+## 1. Clone Repository
+
+```bash
+git clone YOUR_GITHUB_REPO_LINK
 cd Plant_Disease
-Create Virtual Environment
+```
+
+---
+
+## 2. Create Virtual Environment
+
+```bash
 python -m venv venv
-Activate Environment
-Windows
+```
+
+---
+
+## 3. Activate Environment
+
+### Windows
+
+```bash
 venv\Scripts\activate
-Mac/Linux
+```
+
+### Mac/Linux
+
+```bash
 source venv/bin/activate
-Install Dependencies
+```
+
+---
+
+## 4. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-▶️ Run Application
+```
+
+---
+
+# 📥 Download Trained Model
+
+Due to GitHub file size limitations, the trained model is hosted externally.
+
+Download Model Here:
+PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE
+
+After downloading, place the model inside:
+
+```bash
+Plant_Disease/
+│
+├── final_agrivision_model.keras
+├── app.py
+└── utils/
+```
+
+---
+
+# ▶️ Run Application
+
+```bash
 python app.py
+```
 
 Application runs at:
 
+```bash
 http://127.0.0.1:7860
+```
 
 ---
-📦 Required Libraries
+
+# 📦 Required Libraries
+
+```txt
 tensorflow
 opencv-python
 gradio
@@ -268,64 +372,69 @@ pillow
 matplotlib
 rembg
 onnxruntime
+```
 
-🧠 Key Learnings
+---
+
+# 🧠 Key Learnings
 
 Through this project I learned:
 
-Transfer Learning
-CNN Architectures
-EfficientNet
-Fine Tuning
-Grad-CAM Explainability
-Image Segmentation
-Deep Learning Deployment
-Real-World Dataset Challenges
-Domain Shift Problems
-Model Generalization.
+* Transfer Learning
+* EfficientNet Architecture
+* CNN Fundamentals
+* Fine Tuning
+* Grad-CAM Explainability
+* Leaf Segmentation
+* Deep Learning Deployment
+* Real-World Image Challenges
+* Domain Shift Problems
+* Model Generalization
 
-⚠️ Real-World Challenges
+---
+
+# ⚠️ Real-World Challenges
 
 The model performs strongly on PlantVillage-style images.
 
-Challenges with internet images:
+Challenges with internet images include:
 
-Different lighting
-Complex backgrounds
-Domain shift
-Low-quality images
+* Complex backgrounds
+* Different lighting conditions
+* Blurry images
+* Domain shift
+* Real-world variability
 
 Future improvements:
 
-Real farm dataset training
-Lesion segmentation
-Higher resolution models
-Advanced explainability methods
-🚀 Future Improvements
-Mobile App Deployment
-Multi-language Support
-Webcam Detection
-Real-Time Farm Monitoring
-Cloud Deployment
-Disease Severity Estimation
-PDF Report Generation
-Advanced Explainability
-Farmer Advisory System
+* Real farm dataset training
+* Lesion segmentation
+* Higher resolution models
+* Advanced explainability techniques
 
-# 📥 Download Trained Model
+---
 
-Due to GitHub file size limitations, the trained model is hosted externally.
+# 🚀 Future Improvements
 
-Download Here:
-[[Download Model](YOUR_GOOGLE_DRIVE_LINK)](https://drive.google.com/file/d/1gPvOvKM3Ri8UEPHdqoFIQmN0MqZbX_cf/view?usp=sharing)
+* Mobile App Deployment
+* Multi-Language Support
+* Real-Time Webcam Detection
+* Cloud Deployment
+* Disease Severity Estimation
+* PDF Report Generation
+* Advanced Explainability Methods
+* Farmer Advisory System
 
-After downloading, place the model file in the project root directory:
+---
 
-Plant_Disease/
-│
-├── final_agrivision_model.keras
-├── app.py
-└── utils/
+# 👨‍💻 Author
 
-👨‍💻 Author:
 Mohd Faizanullah
+
+AI/ML Enthusiast | Deep Learning | Computer Vision | Generative AI
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a star ⭐ on GitHub.
