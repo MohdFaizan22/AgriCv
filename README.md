@@ -312,5 +312,20 @@ PDF Report Generation
 Advanced Explainability
 Farmer Advisory System
 
+# 📥 Download Trained Model
+
+Due to GitHub file size limitations, the trained model is hosted externally.
+
+Download Here:
+[[Download Model](YOUR_GOOGLE_DRIVE_LINK)](https://drive.google.com/file/d/1gPvOvKM3Ri8UEPHdqoFIQmN0MqZbX_cf/view?usp=sharing)
+
+After downloading, place the model file in the project root directory:
+
+Plant_Disease/
+│
+├── final_agrivision_model.keras
+├── app.py
+└── utils/
+
 👨‍💻 Author:
 Mohd Faizanullah
